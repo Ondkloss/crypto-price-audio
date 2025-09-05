@@ -1,0 +1,2 @@
+# This file ensures GitHub Pages doesn't process files with underscores
+# This is important for Next.js static files that start with _next/

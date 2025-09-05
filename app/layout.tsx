@@ -1,12 +1,14 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const basePath = process.env.NODE_ENV === 'production' ? '/crypto-price-audio' : ''
 
 export const metadata: Metadata = {
-  title: 'crypto-price-audio',
-  description: 'crypto price in audio',
+  title: 'Crypto Price Audio',
+  description: 'PWA that speaks crypto prices at regular intervals',
+  manifest: `${basePath}/manifest.json`,
+  themeColor: '#000000',
+  viewport: 'width=device-width, initial-scale=1',
 }
 
 export default function RootLayout({
@@ -16,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
