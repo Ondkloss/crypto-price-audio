@@ -79,3 +79,7 @@ Contributions are welcome! Feel free to open issues or submit pull requests.
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## 📢 Disclosure
+
+This repo is very much made possible by Copilot, which did the bulk of the code. Thanks for the assist Copilot!
